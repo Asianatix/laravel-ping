@@ -1,18 +1,18 @@
 {
-  "name": "karlmonson/laravel-ping",
+  "name": "mdcn/pantau-server",
   "description": "Simple Ping For Laravel Applications",
   "license": "MIT",
   "authors": [
     {
-      "name": "Karl Monson",
-      "email": "karl@karlmonson.com",
-      "homepage": "https://github.com/karlmonson",
+      "name": "Md Amir Md Yusof",
+      "email": "info@malaysiadesigner.com",
+      "homepage": "http://www.malaysiadesigner.com",
       "role": "Developer"
     }
   ],
   "autoload": {
     "psr-4": {
-      "Karlmonson\\Ping\\": "src/"
+      "MDCN\\Ping\\": "src/"
     }
   },
   "require": {
@@ -22,11 +22,12 @@
    "extra": {
     "laravel": {
       "providers": [
-        "Karlmonson\\Ping\\PingServiceProvider"
+        "MDCN\\Ping\\PingServiceProvider"
       ],
       "aliases": {
-        "Ping": "Karlmonson\\Ping\\Facades\\Ping"
+        "Ping": "MDCN\\Ping\\Facades\\Ping"
       }
     }
   }
 }
+
