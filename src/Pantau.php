@@ -1,13 +1,13 @@
 <?php
 
-namespace Karlmonson\Ping;
+namespace MDCN\Pantau;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\ServerException;
 
-class Ping
+class Pantau
 {
 	/**
 	 * @var \GuzzleHttp\Client
