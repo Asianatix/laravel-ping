@@ -1,14 +1,14 @@
-# Ping for Laravel
+# Pantau Server
 
-This Laravel package is simple and unopinionated. It simply returns the HTTP Status Code for a provided URL.
+Pakej simple dimana ianya dapat memulangkan status kod HTTP berdasarkan IP yang diberi
 
-## Installation
+## Pemasangaan
 
-Install via Composer:
+Pasang melalui Composer:
 ```bash
-composer require karlmonson/laravel-ping
+composer require MDCN/pantau-server
 ```
-You'll need to register the ServiceProvider and Facade:
+Sila daftar dalam ServiceProvider danFacade:
 ```php
 // config/app.php
 
@@ -23,14 +23,14 @@ You'll need to register the ServiceProvider and Facade:
 ];
 ```
 
-## Usage
+## Cara Guna
 
 ```php
 <?php
 
 namespace App\Http\Controllers;
 
-use Ping;
+use Pantau;
 use App\Http\Controllers\Controller;
 
 class LinkController extends Controller
@@ -43,22 +43,13 @@ class LinkController extends Controller
      */
     public function healthCheck($url)
     {
-        $health = Ping::check($url);
+        $health = Pantau::check($url);
 
         if($health == 200) {
-            return 'Alive!';
+            return 'Hidup!';
         } else {
-            return 'Dead :(';
+            return 'Mati :(';
         }
     }
 }
 ```
-
-## Credits
-
-- [Karl Monson](https://github.com/karlmonson) - Author
-- [Eric Blount](https://github.com/ericmakesstuff) - Inspiration ([ericmakesstuff/laravel-server-monitor](https://github.com/ericmakesstuff/laravel-server-monitor))
-
-## License
-
-The MIT License (MIT). Please see [License File](https://github.com/karlmonson/laravel-ping/blob/master/LICENSE.md) for more information.
