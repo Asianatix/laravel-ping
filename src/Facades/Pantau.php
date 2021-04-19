@@ -1,10 +1,10 @@
 <?php
 
-namespace Karlmonson\Ping\Facades;
+namespace MDCN\Pantau\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Ping extends Facade
+class Pantau extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +13,6 @@ class Ping extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'ping';
+        return 'pantau';
     }
 }
