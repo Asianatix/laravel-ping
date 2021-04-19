@@ -1,10 +1,10 @@
 <?php
 
-namespace Karlmonson\Ping;
+namespace MDCN\Ping;
 
 use Illuminate\Support\ServiceProvider;
 
-class PingServiceProvider extends ServiceProvider
+class PantauerviceProvider extends ServiceProvider
 {
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -21,7 +21,7 @@ class PingServiceProvider extends ServiceProvider
 	public function register()
 	{
 		$this->app->singleton('ping', function ($app) {
-			return new Ping();
+			return new Pantau();
 		});
 	}
 
@@ -32,6 +32,6 @@ class PingServiceProvider extends ServiceProvider
 	 */
 	public function provides()
 	{
-		return ['ping'];
+		return ['pantau'];
 	}
 }
