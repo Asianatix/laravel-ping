@@ -1,6 +1,6 @@
 {
   "name": "mdcn/pantau-server",
-  "description": "Simple Ping For Laravel Applications",
+  "description": "Sistem pantau IP",
   "license": "MIT",
   "authors": [
     {
@@ -12,7 +12,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "MDCN\\Ping\\": "src/"
+      "MDCN\\Pantau\\": "src/"
     }
   },
   "require": {
@@ -22,10 +22,10 @@
    "extra": {
     "laravel": {
       "providers": [
-        "MDCN\\Ping\\PingServiceProvider"
+        "MDCN\\Pantau\\PantauServiceProvider"
       ],
       "aliases": {
-        "Ping": "MDCN\\Ping\\Facades\\Ping"
+        "Ping": "MDCN\\Pantau\\Facades\\Ping"
       }
     }
   }
